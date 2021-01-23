@@ -10,9 +10,9 @@ function Header() {
   const filters = ["atividades", "livros", "jogos", "culinária", "ciências"];
 
   return (
-    <section class="section">
-      <div class="field">
-        <div class="control">
+    <section className="section">
+      <div className="field">
+        <div className="control">
           <input className="input" type="text" placeholder="Search" />
         </div>
       </div>

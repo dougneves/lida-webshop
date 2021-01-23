@@ -4,7 +4,7 @@ import Body from "../components/Body";
 
 function App() {
   return (
-    <section class="section">
+    <section className="section">
       <div className="container">
         <div className="columns">
           <div className="column is-12-mobile is-9 m-1">
