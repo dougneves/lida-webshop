@@ -3,15 +3,16 @@ function ProductBox(props) {
     <div className="column is-half-tablet is-one-third-desktop">
       <div className="card">
         <div className="card-image">
-          <figure className="image is-2by1">
-            <img
-              src={
-                "https://picsum.photos/480?random=" +
-                Math.floor(Math.random() * 1000)
-              }
-              alt={props.productName}
-            />
-          </figure>
+          <figure
+            className="image is-2by1"
+            style={{
+              backgroundImage:
+                "url(https://picsum.photos/400?random=" +
+                Math.floor(Math.random() * 1000) +
+                ")",
+              backgroundPosition: "center",
+            }}
+          />
         </div>
         <div className="card-content">
           <div className="content">{props.productName}</div>
