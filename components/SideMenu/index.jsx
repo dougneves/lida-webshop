@@ -1,5 +1,5 @@
 function SideMenu() {
-  return <div>LiDa</div>;
+  return <aside>LiDa</aside>;
 }
 
 export default SideMenu;
