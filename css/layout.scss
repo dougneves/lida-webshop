@@ -1,4 +1,11 @@
+body {
+  margin: 0;
+  background-color: #ecf0f1;
+}
+
 .layout {
+  max-width: 1440px;
+  margin: 0 auto;
   display: grid;
   grid-template-areas:
     'header'
@@ -6,6 +13,7 @@
     'sidebar'
     'footer';
   grid-template-rows: auto 1fr auto auto;
+  min-height: 100vh;
 
   > header {
     grid-area: header;
@@ -19,7 +27,7 @@
 
   > main {
     grid-area: main;
-    background-color: #fdf;
+    background-color: #fff;
   }
 
   > footer {

@@ -1,43 +1,38 @@
 import PropTypes from 'prop-types';
 
-function ProductBox({ productName }) {
+function ProductBox({ name }) {
   return (
-    <div>
-      <div
+    <div className="product">
+      <figure
+        className="product-figure"
         style={{
-          width: '400px',
-          height: '400px',
           backgroundImage: `url(https://picsum.photos/400?random=${Math.floor(
             Math.random() * 1000,
           )})`,
-          backgroundPosition: 'center',
         }}
       />
-      <div>
-        <div>{productName}</div>
+      <div className="product-content">
+        <h2 className="product-title">{name}</h2>
+        <p className="product-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sic consequentibus vestris
+          sublatis prima tolluntur. Istam voluptatem, inquit, Epicurus ignorat? Minime vero istorum
+          quidem, inquit. Neutrum vero, inquit ille. Itaque contra est, ac dicitis;
+        </p>
       </div>
-      <footer>
-        <p>
-          <span>
-            View on
-            {' '}
-            <button type="button">Elo7</button>
-          </span>
-        </p>
-        <p className="card-footer-item">
-          <span>
-            View on
-            {' '}
-            <button type="button">OLX</button>
-          </span>
-        </p>
+      <footer className="product-footer">
+        <button className="product-button" type="button">
+          view on Elo7
+        </button>
+        <button className="product-button" type="button">
+          view on OLX
+        </button>
       </footer>
     </div>
   );
 }
 
 ProductBox.propTypes = {
-  productName: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 export default ProductBox;
