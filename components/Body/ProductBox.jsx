@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 function ProductBox({ name }) {
   return (
@@ -7,16 +7,17 @@ function ProductBox({ name }) {
         className="product-figure"
         style={{
           backgroundImage: `url(https://picsum.photos/400?random=${Math.floor(
-            Math.random() * 1000,
+            Math.random() * 1000
           )})`,
         }}
       />
       <div className="product-content">
         <h2 className="product-title">{name}</h2>
         <p className="product-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sic consequentibus vestris
-          sublatis prima tolluntur. Istam voluptatem, inquit, Epicurus ignorat? Minime vero istorum
-          quidem, inquit. Neutrum vero, inquit ille. Itaque contra est, ac dicitis;
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sic
+          consequentibus vestris sublatis prima tolluntur. Istam voluptatem,
+          inquit, Epicurus ignorat? Minime vero istorum quidem, inquit. Neutrum
+          vero, inquit ille. Itaque contra est, ac dicitis;
         </p>
       </div>
       <footer className="product-footer">

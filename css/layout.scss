@@ -1,6 +1,10 @@
 body {
   margin: 0;
   background-color: #ecf0f1;
+  background-image: url('/img/background.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .layout {
@@ -17,17 +21,14 @@ body {
 
   > header {
     grid-area: header;
-    background-color: #fdd;
   }
 
   > aside {
     grid-area: sidebar;
-    background-color: #ddf;
   }
 
   > main {
     grid-area: main;
-    background-color: #fff;
   }
 
   > footer {

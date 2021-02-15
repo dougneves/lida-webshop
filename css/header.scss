@@ -1,0 +1,33 @@
+.lida-header {
+  padding: 4px;
+
+  .search-field {
+    position: relative;
+
+    .search-input {
+      width: 100%;
+      padding: 10px 5px 5px;
+      margin: 7px;
+      font-size: 1.2rem;
+    }
+
+    .search-label {
+      position: absolute;
+      font-size: 0.8rem;
+      left: 13px;
+      background-color: #fff;
+      padding: 0 5px;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .lida-header {
+    .search-field {
+      .search-input {
+        width: auto;
+        min-width: 480px;
+      }
+    }
+  }
+}

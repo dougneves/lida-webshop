@@ -5,6 +5,10 @@ function BodyContainer() {
     'matemática básica de contar dos ursos',
     'soma das obrobas',
     'multiplicando muito',
+    'somando as casas',
+    'subtraindo o arco-íris',
+    'minhas primeiras 100 palavras em inglês',
+    'contando histórias',
   ];
 
   return (
